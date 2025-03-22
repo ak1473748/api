@@ -17,4 +17,9 @@ public class TestController {
     public ResponseEntity<String> hello(HttpServletRequest servletRequest){
         return ResponseEntity.ok().body("Hello from Api");
     }
+
+    @GetMapping("/say")
+    public ResponseEntity<String> say(HttpServletRequest servletRequest){
+        return ResponseEntity.ok().body("say");
+    }
 }
