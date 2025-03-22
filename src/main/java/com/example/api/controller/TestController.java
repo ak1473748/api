@@ -12,4 +12,9 @@ public class TestController {
     public ResponseEntity<String> test(HttpServletRequest servletRequest){
         return ResponseEntity.ok().body("Test Api");
     }
+
+    @GetMapping("/hello")
+    public ResponseEntity<String> hello(HttpServletRequest servletRequest){
+        return ResponseEntity.ok().body("Hello from Api");
+    }
 }
